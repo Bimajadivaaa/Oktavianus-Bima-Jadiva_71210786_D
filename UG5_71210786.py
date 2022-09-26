@@ -1,13 +1,28 @@
+from pickle import NONE
+
+
 class Mobil:
     _merk = ""
     _tipe = ""
-    _jenisBahanBakar = ""
-    _kapasitasBBM = 0
+    _jenisBahanBakar = NONE
+    _kapasitasBBM = NONE
 
     def _init_(self, merk, tipe, jenisBahanBakar, kapasitasBBM):
         self._merk = merk
         self._tipe = tipe
         self._jenisBahanBakar = jenisBahanBakar
+        self._kapasitasBBM = kapasitasBBM
+
+    def getMerk(self,merk):
+        self._merk = merk
+
+    def getTipe(self,tipe):
+        self._tipe = tipe
+
+    def getMerk(self,jenisBahanBakar):
+        self._jenisBahanBakar = jenisBahanBakar
+
+    def getMerk(self,kapasitasBBM):
         self._kapasitasBBM = kapasitasBBM
 
     def getInfo(self):
